@@ -4,7 +4,7 @@ from django.contrib.auth.models import (
 )
 
 class Article(models.Model):
-    author = models.ForeignKey("User", related_name='author', on_delete=models.CASCADE)
+    author??? = models.ForeignKey("User", related_name='author', on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     content= models.TextField(null=True, blank=True)
     
